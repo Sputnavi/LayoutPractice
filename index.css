@@ -74,15 +74,29 @@ html, body {
 
 .about-me {
     width: 100%;
-    height: 506px;
+    height: auto;
     background-color: #F6F6F6;
 }
 
 .about-me_content {
-    max-width: 940px;
+    max-width: 485px;
     display: flex;
     flex-direction: column;
     margin: 5% auto;
+}
+
+.about-me_content_header {
+    margin-bottom: 1em;
+    align-self: center;
+    font-size: 34px;
+}
+
+.about-me_content_text {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 .bold {
@@ -93,4 +107,8 @@ html, body {
 .rotated {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
+}
+
+.bottom-margined {
+    margin-bottom: 2em;
 }
