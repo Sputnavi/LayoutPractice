@@ -100,6 +100,7 @@ html, body {
 }
 
 /* Skills block */
+
 .skills {
     width: 100%;
     background-color: white;
@@ -120,6 +121,108 @@ html, body {
     text-align: center;
 }
 
+/* Portfolio block */
+
+.portfolio {
+    width: 100%;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-header {
+    margin-top: 2em;
+    align-self: center;
+    font-size: 34px;
+}
+
+.portfolio-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% auto;
+}
+
+.image-with-title {
+    margin-bottom: 2em;
+    width: 75%;
+    text-align: center;
+}
+
+.image-title {
+    font-size: 18px;
+}
+
+.fashion-store {
+    background-image: url(Images/fashionStore.png);
+    height: 30vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reebok {
+    background-image: url(Images/reebok.png);
+    height: 30vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.braun {
+    background-image: url(Images/braun.png);
+    height: 30vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Contacts block */
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+footer > * + * {
+    margin: 2em
+}
+
+.contacts-header {
+    font-size: 34px;
+}
+
+.chat-me {
+    text-align: center;
+}
+
+.send-message {
+    background-color: #070707;
+    color: #FFFFFF;
+    border-radius: 2em;
+    padding: 1em 2em;
+    font-size: 18px;
+    text-align: center;
+}
+
+.social-networks-container {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bye-message {
+    font-size: 14px;
+    text-align: center;
+    color: #828282;
+}
+
 /* Modificators */
 
 .bold {
@@ -134,4 +237,12 @@ html, body {
 
 .bottom-margined {
     margin-bottom: 2em;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.empty-star {
+    filter: invert(99%) sepia(0%) saturate(1923%) hue-rotate(48deg) brightness(117%) contrast(80%);
 }
