@@ -1,0 +1,248 @@
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url(/Fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(/Fonts/Gilroy-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Gilroy-Medium;
+}
+
+html, body {
+    background-color: gray;
+}
+
+.blocks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main block */
+
+.main {
+    width: 100%;
+    height: 760px;
+    background-color: white;
+}
+
+.main_content {
+    max-width: 940px;
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto;
+}
+
+.main_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main_image {
+    width: 100%;
+    height: 65vh;
+    text-align: center;
+    background-image: url(Images/MainGuy.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.header_name {
+    font-size: 47px;
+}
+
+.header_info {
+    font-size: 18px;
+    align-self: center;
+}
+
+.header_language {
+    font-size: 16px;
+    align-self: center;
+}
+
+/* About-me block */
+
+.about-me {
+    width: 100%;
+    height: auto;
+    background-color: #F6F6F6;
+}
+
+.about-me_content {
+    max-width: 485px;
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto;
+}
+
+.about-me_content_header {
+    margin-bottom: 1em;
+    align-self: center;
+    font-size: 34px;
+}
+
+.about-me_content_text {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Skills block */
+
+.skills {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3% 0;
+}
+
+.programs-container {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.program {
+    text-align: center;
+}
+
+/* Portfolio block */
+
+.portfolio {
+    width: 100%;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-header {
+    margin-top: 2em;
+    align-self: center;
+    font-size: 34px;
+}
+
+.portfolio-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% auto;
+}
+
+.image-with-title {
+    margin-bottom: 2em;
+    width: 75%;
+    text-align: center;
+}
+
+.image-title {
+    font-size: 18px;
+}
+
+.fashion-store {
+    background-image: url(Images/fashionStore.png);
+    height: 30vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reebok {
+    background-image: url(Images/reebok.png);
+    height: 30vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.braun {
+    background-image: url(Images/braun.png);
+    height: 30vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Contacts block */
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+footer > * + * {
+    margin: 2em
+}
+
+.contacts-header {
+    font-size: 34px;
+}
+
+.chat-me {
+    text-align: center;
+}
+
+.send-message {
+    background-color: #070707;
+    color: #FFFFFF;
+    border-radius: 2em;
+    padding: 1em 2em;
+    font-size: 18px;
+    text-align: center;
+}
+
+.social-networks-container {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bye-message {
+    font-size: 14px;
+    text-align: center;
+    color: #828282;
+}
+
+/* Modificators */
+
+.bold {
+    font-weight: bold;
+    font-family: Gilroy-Bold;
+}
+
+.rotated {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.bottom-margined {
+    margin-bottom: 2em;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.empty-star {
+    filter: invert(99%) sepia(0%) saturate(1923%) hue-rotate(48deg) brightness(117%) contrast(80%);
+}
